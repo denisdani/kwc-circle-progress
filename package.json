@@ -1,5 +1,6 @@
 {
-  "name": "kwc-circle-progress",
+  "name": "@kano/kwc-circle-progress",
+  "version": "0.0.1",
   "main": "kwc-circle-progress.js",
   "dependencies": {
     "@polymer/polymer": "^3.0.0",
