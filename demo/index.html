@@ -1,33 +1,50 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
 
-    <title>kwc-circle-progress demo</title>
+		<title>kwc-circle-progress demo</title>
 
-    <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+		<script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+		<script type="module" src="../node_modules/@webcomponents/shadycss/entrypoints/apply-shim.js"></script>
 
-    <script type="module">
-      import '@polymer/iron-demo-helpers/demo-pages-shared-styles';
-      import '@polymer/iron-demo-helpers/demo-snippet';
-    </script>
+		<script type="module">
+			import '@polymer/iron-demo-helpers/demo-pages-shared-styles';
+			import '@polymer/iron-demo-helpers/demo-snippet';
+		</script>
 
-    <script type="module" src="../kwc-circle-progress.js"></script>
+		<script type="module" src="../kwc-circle-progress.js"></script>
 
-    <custom-style>
-      <style is="custom-style" include="demo-pages-shared-styles">
-      </style>
-    </custom-style>
-  </head>
-  <body>
-    <div class="vertical-section-container centered">
-      <h3>Basic kwc-circle-progress demo</h3>
-      <demo-snippet>
-        <template>
-          <kwc-circle-progress></kwc-circle-progress>
-        </template>
-      </demo-snippet>
-    </div>
-  </body>
+		<custom-style>
+			<style is="custom-style" include="demo-pages-shared-styles">
+			</style>
+		</custom-style>
+	</head>
+	<body>
+		<div class="vertical-section-container centered">
+		<h3>Basic kwc-circle-progress demo</h3>
+		<demo-snippet>
+			<template>
+				<kwc-circle-progress
+					radius="100"
+					stroke-width="7"
+					value="0.35">
+				</kwc-circle-progress>
+				<style>
+					kwc-circle-progress {
+						width: 100px;
+						height: 100px;
+						--kwc-circle-progress: {
+							stroke: orange;
+						};
+						--kwc-circle-progress-back: {
+							stroke: grey;
+						};
+					}
+				</style>
+			</template>
+		</demo-snippet>
+		</div>
+	</body>
 </html>

@@ -3,6 +3,7 @@
   "main": "kwc-circle-progress.js",
   "dependencies": {
     "@polymer/polymer": "^3.0.0",
+    "@webcomponents/shadycss": "^1.3.5",
     "npm": "^6.2.0"
   },
   "devDependencies": {
